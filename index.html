@@ -67,13 +67,13 @@
     
 </head>
 
-<body style="overflow: hidden;">
+<body style="overflow: hidden;" id="wrap" onmouseover="function(show)">
  
 <a href="page2.html">
   <canvas id="canvas-1"></canvas>
 </a>
   
-
+    
     <div class="txt1">
       <img src="matxt2.png">
       <img src="matxt2.png">
@@ -93,7 +93,7 @@
     </a> 
 
 
-    <div id="rightone" onmouseover="function(show)">
+    <div id="rightone">
       <div class="txt3">
         <img src="matxt3.png">
         <img src="matxt3.png">
@@ -109,6 +109,7 @@
     <div id="bttitle">
       <img src="bttitle.png">
     </div>
+    
     
 
  
@@ -279,7 +280,7 @@
 
 </script>
 <script type="text/javascript">
-  rightone.onmouseover = function(show){
+  wrap.onmouseover = function(show){
         document.getElementById('rightone').style.visibility="hidden";
         document.getElementById('title').style.visibility="visible";
       }
